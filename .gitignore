@@ -1,2 +1,5 @@
 /.idea/
 /.venv/
+/Flask_test/app/__pycache__
+/Flask_test/__pycache__
+Flask_test/instance/mydatabase.db

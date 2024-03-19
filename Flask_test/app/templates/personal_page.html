@@ -1,0 +1,21 @@
+{% extends 'default.html' %}
+
+{% block title %}
+Аккаунт
+{% endblock %}
+
+{% block content %}
+<!-- Страничка с данными пользователя -->
+
+    <p>
+    First Name: {{ user.first_name }} <br>
+    Second Name: {{ user.second_name }} <br>
+    Email: {{ user.email }} <br>
+    </p>
+
+    <form name="logout" action="{{ logoutlink }}" method="get" style="margin:0;">
+        <input class="btn" type="submit" value="Выход" style="color:red;">
+    </form>
+
+
+{% endblock %}
