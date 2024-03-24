@@ -1,5 +1,51 @@
 # Репозиторий
 
+# Курс Flask, промежуточное тестирование, многопоточность, асинхронность
+
+### Задание
+
+Написать программу, которая скачивает изображения с заданных URL-адресов и сохраняет их на диск.
+Каждое изображение должно сохраняться в отдельном файле, название которого соответствует названию изображения
+в URL-адресе.
+Например, URL-адрес: https://example/images/image1.jpg -> файл на диске: image1.jpg
+— Программа должна использовать многопоточный, многопроцессорный и асинхронный подходы.
+— Программа должна иметь возможность задавать список URL-адресов через аргументы командной строки.
+— Программа должна выводить в консоль информацию о времени скачивания каждого изображения и общем времени
+выполнения программы.
+
+### Запуск
+
+Перейти в папку скрипта:
+
+    cd .\Kurs_Flask\Test_sync_async\
+
+Запустить скрипт, указав в параметрах все URL картинок. Пример:
+
+    python main.py https://hb.bizmrg.com/gb_ui_assets/ui_banners/6586/62db1647f8ec3f716c1123e091392b66.png https://gb.ru/_nuxt/img/ef949be.png https://gb.ru/_nuxt/img/8e1cdf0.png
+
+### Пример вывода
+
+    INFO:root:####################
+    INFO:root:Sync download:
+    INFO:root:  1.78 seconds for downloaded https://hb.bizmrg.com/gb_ui_assets/ui_banners/6586/62db1647f8ec3f716c1123e091392b66.png.
+    INFO:root:  1.62 seconds for downloaded https://gb.ru/_nuxt/img/ef949be.png.
+    INFO:root:  1.54 seconds for downloaded https://gb.ru/_nuxt/img/8e1cdf0.png.
+    INFO:root:Total time:  4.93 seconds
+    INFO:root:####################
+    INFO:root:Multithread download:
+    INFO:root:  1.68 seconds for downloaded https://gb.ru/_nuxt/img/8e1cdf0.png.
+    INFO:root:  2.65 seconds for downloaded https://gb.ru/_nuxt/img/ef949be.png.
+    INFO:root:  2.79 seconds for downloaded https://hb.bizmrg.com/gb_ui_assets/ui_banners/6586/62db1647f8ec3f716c1123e091392b66.png.
+    INFO:root:Total time:  2.80 seconds
+    INFO:root:####################
+    INFO:root:Multithread download:
+    INFO:root:  1.24 seconds for downloaded https://gb.ru/_nuxt/img/ef949be.png.
+    INFO:root:  1.25 seconds for downloaded https://gb.ru/_nuxt/img/8e1cdf0.png.
+    INFO:root:  1.40 seconds for downloaded https://hb.bizmrg.com/gb_ui_assets/ui_banners/6586/62db1647f8ec3f716c1123e091392b66.png.
+    INFO:root:Total time:  1.40 seconds
+
+
+
 
 # Курс Flask, промежуточное тестирование
 
