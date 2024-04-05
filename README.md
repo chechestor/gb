@@ -16,7 +16,7 @@
 
 Перейти в папку скрипта:
 
-    cd .\Kurs_Flask\Test_FastAPI_extended\
+    cd .\Kurs_Django\project1
 
 Запустить скрипт, указав в параметрах все URL картинок. Пример:
 
