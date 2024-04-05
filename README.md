@@ -20,7 +20,7 @@
 
 Запустить скрипт, указав в параметрах все URL картинок. Пример:
 
-    uvicorn main:app --reload
+    django manage.py runserver
 	
 В браузере открываем две страницы:
 
