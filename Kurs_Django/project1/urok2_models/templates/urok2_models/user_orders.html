@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Заказы клиента {{ user_id }}</h2>
+
+<h3>{{ comment }}</h3>
+
+<table>
+    <tr><th>Продукт</th><th>Дата</th><th>ID заказа</th></tr>
+{% for prod in products %}
+    <tr>
+        <td>{{ prod.product }}</td><td>{{ prod.sale_date }}</td><td>{{ prod.order_id }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+
+{% endblock %}
