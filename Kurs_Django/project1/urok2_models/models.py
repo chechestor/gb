@@ -25,13 +25,17 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)# цена товара
     quantity = models.IntegerField()# количество товара
     reg_date = models.DateTimeField()   # дата добавления товара
+    image = models.FilePathField(default='')  # имя файла продукта
+    picture = models.ImageField(default='')  # имя файла продукта
     def __str__(self):
         return (f'pk: {self.pk}, '
                 f'name: {self.name}, '
                 f'description: {self.description}, '
                 f'price: {self.price}, '
                 f'quantity: {self.quantity}, '
-                f'red_date: {self.reg_date}')
+                f'red_date: {self.reg_date}, '
+                f'image: {self.image}, '
+                f'picture: {self.picture}')
 
 # Заказ
 

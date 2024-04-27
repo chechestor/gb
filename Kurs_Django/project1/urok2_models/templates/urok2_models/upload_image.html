@@ -1,10 +1,32 @@
 {% extends 'base.html' %}
 
+{% block style_extend %}
+.error_message {
+    background-color: #FDD;
+    color: red;
+}
+.ok_message {
+    background-color: #DFD;
+    color: green;
+}
+{% endblock %}
+
+
 {% block content %}
     <h2>Загрузите изображение</h2>
+
+    {% if error_message %}
+    <div class="error_message">{{ error_message }}</div>
+    {% endif %}
+    {% if ok_message %}
+    <div class="ok_message">{{ ok_message }}</div>
+    {% endif %}
+
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Загрузить</button>
     </form>
 {% endblock %}
+
+

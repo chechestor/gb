@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block style_extend %}
+.table img {
+    height:100px;
+    width:100px;
+}
+{% endblock %}
+
+{% block content %}
+    <h2>Все продукты</h2>
+
+<h3>{{ comment }}</h3>
+
+<table class="products">
+    <tr><th>ID</th><th>Продукт</th><th>Картинка</th></tr>
+{% for prod in products %}
+    <tr>
+        <td>{{ prod.id }}</td><td>{{ prod.text }}</td><td><img src="{{ prod.image_url }}" /></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+{% endblock %}
