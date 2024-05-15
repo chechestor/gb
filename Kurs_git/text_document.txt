@@ -1,3 +1,4 @@
 text document 1st commit
 
 Text change 1 in branch
+Text change 2 in branch
