@@ -3,3 +3,5 @@ markdown document 1st commit
 markdown change 1 in branch
 markdown change 2 in branch
 markdown change 3 in branch
+Hi! Its me, chechestor! I have make some actions in git repo. ) Work is done!
+
